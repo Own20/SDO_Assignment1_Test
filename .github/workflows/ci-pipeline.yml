@@ -25,7 +25,7 @@ jobs:
         node-version: "18"
     
     - name: Install dependencies
-      run: npm clean-install
+      run: npm install
     
     - name: Verify Workflow Completed
       run: echo "GitHub Actions Workflow completed successfully."
