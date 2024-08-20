@@ -25,7 +25,7 @@ jobs:
         node-version: "18"
     
     - name: Install dependencies
-      run: npm clean-install
+      run: npm install
     
     - name: Run eslint (linter)
       run: npm run test-lint
@@ -33,7 +33,7 @@ jobs:
     - name: Verify Linting Completed
       run: echo "Linting completed successfully."
 
-    - name: Push artifact
+    - name: Push lint artifact
       uses: actions/upload-artifact@v3
       with:
         name: lint-artifact
