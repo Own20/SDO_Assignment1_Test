@@ -30,7 +30,7 @@ jobs:
     - name: Verify Workflow Completed
       run: echo "GitHub Actions Workflow completed successfully."
 
-    - name: Push artifact
+    - name: Push new artifact
       uses: actions/upload-artifact@v3
       with:
         name: test-artifact-${{ github.sha }}
