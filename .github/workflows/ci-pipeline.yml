@@ -33,7 +33,7 @@ jobs:
     - name: Verify Linting Completed
       run: echo "Linting completed successfully."
 
-    - name: Push artifact
+    - name: Push lint artifact
       uses: actions/upload-artifact@v3
       with:
         name: lint-artifact
