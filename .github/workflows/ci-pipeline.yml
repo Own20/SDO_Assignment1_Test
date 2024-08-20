@@ -33,8 +33,29 @@ jobs:
     - name: Verify Linting Completed
       run: echo "Linting completed successfully."
 
-    - name: Push lint artifact
+  unit-tests:
+    name: Unit Tests
+    needs: lint
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Use Node.js 18.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: "18"
+    
+    - name: Install dependencies
+      run: npm install
+    
+    - name: Run unit tests
+      run: npm run test-unit
+
+    - if: success() || failure()
+      name: Upload unit test report (artifact)
       uses: actions/upload-artifact@v3
       with:
-        name: lint-artifact
+        name: unit-test-${{ github.sha }} unit-test-artifact
         path: reports/report.xml
