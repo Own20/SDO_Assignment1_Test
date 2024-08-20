@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # COSC2759 Assignment 1
 ## Notes App - CI Pipeline
 - Full Name/Names: **FILL IN**
@@ -31,3 +32,6 @@
 ### 1. a simple explanation of how the pipeline is run
 #### (what commands will cause the pipeline to run correctly, what output is expected)
 abcdefghijklmnopqrstuvwxyz
+=======
+# SDOnotestest
+>>>>>>> 6ccf18073ad79e76057987549a0af8b571623033
