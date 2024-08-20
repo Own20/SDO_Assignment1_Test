@@ -25,13 +25,13 @@ jobs:
         node-version: "18"
     
     - name: Install dependencies
-      run: npm install
+      run: npm clean-install
     
     - name: Verify Workflow Completed
       run: echo "GitHub Actions Workflow completed successfully."
 
-    - name: Push new artifact
+    - name: Push artifact
       uses: actions/upload-artifact@v3
       with:
-        name: test-artifact-${{ github.sha }}
+        name: test-artifact
         path: reports/report.xml
