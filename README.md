@@ -1,7 +1,7 @@
 # COSC2759 Assignment 1
-## Notes App - CI Pipeline
-- Full Name/Names: **FILL IN**
-- Student ID/IDs: **FILL IN**
+## Notes App - CI Pipeline SDOa16
+- Full Name/Student ID: **Arvin Yuwono/s4114672**
+- Full Name/Student ID: **Christopher Owen/s4115241**
 
 ### Guidance (remove this section before final submission)
 
