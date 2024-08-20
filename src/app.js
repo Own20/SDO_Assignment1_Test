@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
-const Note = require('./models/note');
+const Note = require('./models/note').default;
 const notesRouter = require('./routes/notes');
 const methodOverride = require('method-override');
 require('dotenv').config();
