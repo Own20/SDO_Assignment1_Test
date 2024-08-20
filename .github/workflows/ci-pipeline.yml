@@ -27,8 +27,8 @@ jobs:
     - name: Install dependencies
       run: npm clean-install
     
-    - name: Run linter
-      run: npm run lint
+    - name: Run eslint (linter)
+      run: npm run test-lint
     
     - name: Verify Linting Completed
       run: echo "Linting completed successfully."
